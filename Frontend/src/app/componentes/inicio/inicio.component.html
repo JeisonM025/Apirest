@@ -1,0 +1,45 @@
+<p>Listar</p>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Primer Nombre</th>
+        <th scope="col">Segundo Nombre</th>
+        <th scope="col">Primer Apellido</th>
+        <th scope="col">Segundo Apellido</th>
+        <th scope="col">Fecha de nacimineto</th>
+        <th scope="col">Tipo de sangre</th>
+        <th scope="col"> Tipo documento</th>
+        <th scope="col"> Numero de documeento</th>
+        <th scope="col">Activo</th>
+        <th scope="col">EPS empleado</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar </th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of ListarPersona">
+        <th >{{persona.IdPersona}}</th>
+        <td>{{persona.primerNombre}}</td>
+        <th >{{persona.segundoNombre}}</th>
+        <td>{{persona.primerApellido}}</td>
+        <th >{{persona.segundoApellido}}</th>
+        <td>{{persona.fechaNacimiento}}</td>
+        <th >{{persona.tipoSangre}}</th>
+        <td>{{persona.tic_Doc}}</td>
+        <th >{{persona.num_Doc}}</th>
+        <td>{{persona.activo}}</td>
+        <th >{{persona.EPS_emp}}</th>
+        <td>
+            <button type="button" class="btn btn-primary">Editar</button>
+        </td>
+        <td>    
+            <button type="button" class="btn btn-danger">Eliminar</button>
+        </td>
+        
+      </tr>
+     
+    </tbody>
+  </table>
